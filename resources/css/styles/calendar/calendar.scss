@@ -1,0 +1,76 @@
+@use '../../colors';
+@use '../../sizes';
+@use '../../fonts';
+@use '../../timings';
+.calendario{
+    background-color: colors.$negro-fondo;
+    color: colors.$verde-oasis;
+    border: sizes.$calendario-border ridge  colors.$verde-oasis;
+    width: sizes.$calendario-ancho;
+    max-width: sizes.$calendario-max-ancho;
+    margin: sizes.$calendario-margin auto;
+    padding: sizes.$calendario-padding sizes.$cero;
+    box-shadow: sizes.$cero sizes.$calendario-shadow sizes.$calendario-shadow2 sizes.$cero colors.$negro-shadow, sizes.$cero sizes.$calendario-shadow3 sizes.$calendario-shadow4 sizes.$cero colors.$negro2-shadow;
+    &__info{
+        display: flex;
+        align-items: center;
+        padding: sizes.$cero sizes.$calendario-info-pad;
+        font-size: fonts.$calendario-info;
+        text-transform: uppercase;
+    }
+    &__prev, &__next{
+        color: colors.$verde-oasis;
+        cursor: pointer;
+        font-size: fonts.$calendario-flechas;
+        transition: all timings.$calendario-hover;
+    }
+    &__prev{
+        margin-right: auto;
+    }
+    &__next{
+        margin-left: auto;
+    }
+    &__next:hover, &__prev:hover{
+        color: colors.$oro;
+        text-shadow: sizes.$calendario-hover-shadow sizes.$calendario-hover-shadow sizes.$calendario-hover-shadow2 colors.$verde-oasis;
+    }
+    &__semana, &__dias{
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(7, 1fr);
+    }
+    &__dias p{
+        margin: sizes.$cero;
+        font-weight: bolder;
+        transform: translate(2em);
+    }
+    .hoy{
+        background-color: colors.$oro;
+        color: colors.$rojo;
+    }
+    
+    &__dias{
+        cursor: pointer;
+        border: 1px solid colors.$verde-oasis;
+        transition: all timings.$calendario-hover;
+    }
+    &__item:hover{
+        border-radius: sizes.$calendario-item-hover;
+        background-color: colors.$oro;
+    }
+    &__mes, &__anyo{
+        padding: sizes.$calendario-mes-pad sizes.$calendario-mes-pad2;
+    }
+    &__item{
+        align-items: center;
+        line-height: 2;
+    }
+}
+.clicado{
+    border-radius: sizes.$calendario-clicado;
+    background-color: colors.$oro;
+    color: colors.$rojo;
+}
+.pasado{
+    opacity: 0.3;
+}

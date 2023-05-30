@@ -1,0 +1,11 @@
+@use '../../../sizes';
+
+#carouselFamiliar{
+    position: relative;
+    bottom: sizes.$carousel-bottom;
+}
+#carouselFamiliar{
+    img{
+        height: sizes.$altura-view;
+    }
+}

@@ -1,0 +1,67 @@
+@use '../../../sizes';
+@use '../../../timings';
+
+
+.cartaHabitacionesSuite{
+    margin-bottom: sizes.$carta-hab-margin-bottom;
+    div{
+        div{
+            img{
+                width: sizes.$cien-porcentaje;
+                height: sizes.$carta-img-alto;
+            }
+            div{
+                div{
+                    img{
+                        width: sizes.$carta-hab-img-lados;
+                        height: sizes.$carta-hab-img-lados;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.encuentraHabitacionSuite{
+    margin-top: sizes.$habitacion-titulo-margin-top;
+    margin-bottom: sizes.$habitacion-titulo-margin-bottom;
+}
+
+.iconosHabitacionCardSuite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: sizes.$habitacion-iconos-margin;
+    margin-bottom: sizes.$habitacion-iconos-margin;
+}
+
+
+.iconoEntrarHab{
+    transition: all timings.$servicios-habitaciones ease;
+    opacity: 0;
+    position: absolute;
+    top: sizes.$icono-entrar-top;
+    left: sizes.$icono-entrar-left;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.iconoEntrar{
+    width: sizes.$icono-entrar-ancho;
+}
+.imagenEntrar{
+    transition: all timings.$servicios-habitaciones ease;
+}
+
+.entrar:hover{
+    .imagenEntrar {
+        opacity: 0.3;
+      }
+}
+  
+.entrar:hover{
+    .iconoEntrarHab {
+        opacity: 1;
+    }
+}

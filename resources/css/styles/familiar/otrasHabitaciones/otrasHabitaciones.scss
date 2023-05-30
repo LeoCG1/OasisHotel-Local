@@ -1,0 +1,39 @@
+@use '../../../sizes';
+
+
+
+.cartaHabitacionesFamiliar{
+    margin-bottom: sizes.$carta-hab-margin-bottom;
+    div{
+        div{
+            img{
+                width: sizes.$cien-porcentaje;
+                height: sizes.$carta-img-alto;
+            }
+            div{
+                div{
+                    img{
+                        width: sizes.$carta-hab-img-lados;
+                        height: sizes.$carta-hab-img-lados;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.encuentraHabitacionFamiliar{
+    margin-top: sizes.$habitacion-titulo-margin-top;
+    margin-bottom: sizes.$habitacion-titulo-margin-bottom;
+}
+
+.iconosHabitacionCardFamiliar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: sizes.$habitacion-iconos-margin;
+    margin-bottom: sizes.$habitacion-iconos-margin;
+}
+.reservaHabitacion{
+    width: sizes.$reserva-boton-ancho;
+}

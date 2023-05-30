@@ -1,0 +1,60 @@
+@use '../../../colors';
+@use '../../../sizes';
+@use '../../../fonts';
+@use '../../../timings';
+#galeria{
+    margin-bottom: sizes.$galeria-margen;
+}
+
+.galeria{
+    margin-bottom: sizes.$galeria-margen;
+    div{
+        h2{
+            font-size: fonts.$galeria-titulos;
+            margin-bottom: sizes.$galeria-h2-margen;
+        }
+        a{
+            img{
+                width: sizes.$galeria-img-ancho;
+                height: sizes.$galeria-img-alto;
+                border: sizes.$galeria-img-borde solid colors.$verde-oasis;
+            }
+        }
+    }
+}
+
+.modalClick{
+    cursor: pointer;
+}
+.fotoAlModal{
+    position: relative;
+    width: sizes.$cien-porcentaje;
+    cursor: pointer;
+    &:hover{
+        .imagenModal {
+            opacity: 0.3;
+            border: sizes.$galeria-img-borde solid colors.$negro;
+            transform: scale(1.1);
+          }
+    }
+    &:hover{
+        .iconoImagenes {
+            opacity: 1;
+        }
+    }
+}
+.iconoModal{
+    width: sizes.$icono-galeria-ancho;
+}
+.imagenModal{
+    transition: all timings.$icono-galeria ease;
+}
+.iconoImagenes{
+    transition: opacity timings.$icono-galeria ease;
+    opacity: 0;
+    position: absolute;
+    top: sizes.$icono-galeria-top;
+    left: sizes.$icono-galeria-left;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}

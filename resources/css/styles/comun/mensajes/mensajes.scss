@@ -1,0 +1,25 @@
+@use '../../../colors';
+@use '../../../sizes';
+@use '../../../fonts';
+.mensajesError, .mensajesSuccess{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: sizes.$mensajes-top;
+    left: sizes.$mensajes-left;
+    width: sizes.$mensajes-ancho;
+    height: auto;
+    text-align: center;
+    font-size: fonts.$x-large;
+    z-index: 70;
+    background-color: colors.$negro-fondo;
+}
+.mensajesSuccess{
+    border: sizes.$mensajes-borde solid colors.$success-verde;
+    color: colors.$success-verde;
+}
+.mensajesError{
+    border: sizes.$mensajes-borde solid colors.$error-rojo;
+    color: colors.$error-rojo;
+}

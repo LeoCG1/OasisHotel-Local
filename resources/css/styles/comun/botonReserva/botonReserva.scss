@@ -1,0 +1,10 @@
+@use '../../../colors';
+@use '../../../timings';
+
+#botonReserva{
+    transition: background-color timings.$boton-reserva;
+    
+}
+#botonReserva:hover{
+    background-color: colors.$verde-oasis;
+}

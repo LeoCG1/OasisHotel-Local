@@ -1,0 +1,6 @@
+@use '../../../colors';
+@use '../../../sizes';
+
+h1{
+    text-shadow:sizes.$text-shadow-borde sizes.$text-shadow-borde colors.$verde-oasis;
+}

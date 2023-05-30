@@ -1,0 +1,20 @@
+@use '../../sizes';
+@use '../../fonts';
+.tituloOpiniones{
+    margin-top: sizes.$titulo-comments-margin;
+    margin-bottom: sizes.$titulo-comments-margin;
+}
+
+#contacto{
+    margin-bottom: sizes.$titulo-comments-margin;
+    button{
+        width: sizes.$comments-boton-ancho;
+    }
+}
+
+.totalComments{
+    font-size: fonts.$medium;
+    position: absolute;
+    top: sizes.$total-comments-top;
+    left: sizes.$total-comments-left;
+}

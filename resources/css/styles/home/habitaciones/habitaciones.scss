@@ -1,0 +1,27 @@
+@use '../../../colors';
+@use '../../../sizes';
+@use '../../../fonts';
+
+.habitacionRow{
+    div{
+        a{
+            img{
+                width: sizes.$habrow-img-ancho;
+                height: sizes.$habrow-img-alto;
+                border: sizes.$habrow-img-borde solid colors.$verde-oasis;
+            }
+        }
+        h2{
+            text-align: center;
+            transform: translate(-50px);
+            font-size: fonts.$habitacion-titulos;
+            margin-bottom: sizes.$habrow-h2-margen;
+        }
+    }
+} 
+
+
+#habitaciones{
+    margin-top: sizes.$habrow-habmargen-top;
+    margin-bottom: sizes.$habrow-habmargen-bot;
+}

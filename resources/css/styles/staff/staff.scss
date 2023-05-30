@@ -1,0 +1,30 @@
+@use '../../colors';
+@use '../../sizes';
+@use '../../animations';
+@use '../../timings';
+#ponerMasFechas, #quitarMasFechas{
+    cursor: pointer;
+    transition: all timings.$staff-fechas;
+    color: colors.$hover-azul;
+}
+#ponerMasFechas:hover{
+    color: colors.$verde-acierto;
+}
+#quitarMasFechas:hover{
+    color: colors.$rojo-error;
+}
+.inputFechas{
+    cursor: pointer;
+}
+.contenedorCampana{
+    position: absolute;
+    top: sizes.$staff-campana-posTop;
+    right: sizes.$staff-campana-posRight;
+    text-shadow: sizes.$staff-campana-shadow sizes.$staff-campana-shadow colors.$verde-oasis;
+}
+#campana{
+    width: sizes.$staff-campana-ancho;
+    animation: campanaMueve timings.$staff-campana;
+    animation-iteration-count: infinite;
+}
+

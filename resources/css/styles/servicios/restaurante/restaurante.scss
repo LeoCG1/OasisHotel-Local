@@ -1,0 +1,37 @@
+@use '../../../colors';
+@use '../../../sizes';
+@use '../../../fonts';
+@use '../../../timings';
+.tituloRestaurante{
+    margin-top: sizes.$rest-titulo-margen;
+}
+
+.restauranteStyle{
+    background-color: colors.$negro-fondo;
+    color: colors.$verde-oasis;
+    border: sizes.$rest-borde solid colors.$verde-oasis;
+    border-radius: sizes.$rest-radio;
+}
+.restauranteRow{
+    div:first-child{
+        h2{
+            font-size: fonts.$restaurante-h2;
+            text-align: left;
+        }
+    }
+    div{
+        margin-top: sizes.$restaurante-margen;
+        margin-bottom: sizes.$restaurante-margen;
+        img{
+            width: sizes.$cien-porcentaje;
+            height: sizes.$rest-img-alto;
+            transition: all timings.$restaurante-img;
+            border: sizes.$rest-borde solid colors.$verde-oasis;
+        }
+        h2{
+            font-size:fonts.$large;
+            text-align: center;
+            margin-top: sizes.$rest-h2-margen;
+        }
+    }
+}

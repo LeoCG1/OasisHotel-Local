@@ -1,0 +1,23 @@
+@use '../../../colors';
+@use '../../../sizes';
+
+.scrollUp{
+    img{
+        width: sizes.$scroll-img-ancho;
+    }
+}
+.scrollUp{
+    display: none;
+    z-index: 100;
+    position: fixed;
+    left: sizes.$scroll-left;
+    top: sizes.$scroll-top;
+    border: sizes.$scroll-borde solid colors.$negro;
+    border-radius: sizes.$scroll-radio;
+    width: sizes.$scroll-ancho-alto;
+    height: sizes.$scroll-ancho-alto;
+    background-color: colors.$oro;
+}
+.scrollUp:hover{
+    background-color: colors.$verde-oasis;
+}

@@ -1,0 +1,28 @@
+@use '../../../sizes';
+@use '../../../fonts';
+.reservaMargenFamiliar{
+    div{
+        margin-top: sizes.$reserva-margen-fam;
+        margin-bottom: sizes.$reserva-margen-fam;
+    }
+}
+
+.serviciosFamiliar{
+    div{
+        div{
+            h3{
+                font-size: fonts.$medium;
+                text-align: center;
+                margin-right: sizes.$h3-margin-right;
+                margin-top: sizes.$h3-margin-top;
+             }
+             img{
+                width: sizes.$servicios-img-lados;
+                height: sizes.$servicios-img-lados;
+            }
+            h2{
+                margin-bottom: sizes.$h2-margin-bottom;
+            }
+        }
+    }
+}

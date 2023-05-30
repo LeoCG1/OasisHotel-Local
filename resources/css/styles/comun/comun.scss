@@ -1,0 +1,29 @@
+@use './background/fondo.scss';
+@use './botonReserva/botonReserva.scss';
+@use './mensajes/mensajes.scss';
+@use './movimientosScroll/movScroll.scss';
+@use './scrollArriba/botonScrollArriba.scss';
+@use './titulo/titulo.scss';
+@use './subrallado/subrallado.scss';
+@use '../../colors';
+@use '../../fonts';
+@use '../../sizes';
+*{
+    box-sizing: border-box;
+    font-family: fonts.$fuente-general;
+}
+
+.altura{
+    height: sizes.$altura-view;
+}
+.card{
+    box-shadow: sizes.$cero sizes.$calendario-shadow sizes.$calendario-shadow2 sizes.$cero colors.$negro-shadow, sizes.$cero sizes.$calendario-shadow3 sizes.$calendario-shadow4 sizes.$cero colors.$negro-shadow;
+}
+
+.volver{
+    transform: translate(0px, -50px);
+}
+
+
+
+

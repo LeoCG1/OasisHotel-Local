@@ -1,0 +1,36 @@
+@use '../../../colors';
+@use '../../../sizes';
+
+
+.hotelDescripcion{
+    background-color: colors.$negro-fondo;
+    color: colors.$verde-oasis;
+    padding: sizes.$ubic-padding;
+    border: sizes.$ubic-borde solid colors.$verde-oasis;
+    border-radius: sizes.$ubic-radio;
+    height: sizes.$cien-porcentaje;
+}
+
+
+#ubicacion{
+    margin-top: sizes.$ubic-margen-top;
+    margin-bottom: sizes.$ubic-margen-bot;
+}
+.ubicacionRow{
+    div{
+        p{
+            text-align: right;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+    }
+}
+
+
+
+.logoAbajo{
+    margin-top: sizes.$logo-margen;
+}

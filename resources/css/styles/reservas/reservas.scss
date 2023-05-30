@@ -1,0 +1,73 @@
+@use '../../colors';
+@use '../../sizes';
+@use '../../animations';
+@use '../../timings';
+#addHabitacion{
+    cursor: pointer;
+    transition: all timings.$reserva-input;
+    &:hover{
+        color: colors.$rojo;
+    }
+}
+
+.inputEntra{
+    transform: translate(10vh, 0vh);
+    animation: entraInput timings.$reserva-input-entra; 
+    animation-fill-mode: forwards;
+}
+
+
+.reservaTitulo{
+    margin: sizes.$reservas-titulo-margen;
+}
+.cuadroReserva{
+    border: sizes.$cuadro-reserva-borde solid colors.$oro;
+    box-shadow: sizes.$cero sizes.$calendario-shadow sizes.$calendario-shadow2 sizes.$cero colors.$negro-shadow, sizes.$cero sizes.$calendario-shadow3 sizes.$calendario-shadow4 sizes.$cero colors.$negro2-shadow;
+}
+.formReserva{
+    margin-top: sizes.$reserva-form-margen;
+    button{
+        width: sizes.$cien-porcentaje;
+        margin-top: sizes.$reserva-form-botonMargen;
+    }
+    .quitar{
+        width: sizes.$reserva-form-quitarAncho;
+        margin: sizes.$reserva-form-quitarMargen;
+    }
+}
+
+
+.habitacionesReserva{
+    margin-bottom: sizes.$habreserva-margen;
+    div{
+        div{
+            img{
+                width: sizes.$cien-porcentaje;
+                height: sizes.$habreserva-img-alto;
+            }
+            div{
+                div{
+                    img{
+                        width: sizes.$habreserva-icon-lados;
+                        height: sizes.$habreserva-icon-lados;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.otrasHabitacionesReserva{
+    margin-top: sizes.$otrasHab-margen-top;
+    margin-bottom: sizes.$otrasHab-margen-bot;
+}
+.iconosHabitacionReservas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: sizes.$otrasHab-icon-margen;
+    margin-bottom: sizes.$otrasHab-icon-margen;
+}
+.verMasReserva{
+    width: sizes.$otrasHab-verMas-ancho;
+}

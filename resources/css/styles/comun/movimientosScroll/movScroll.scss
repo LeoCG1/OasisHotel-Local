@@ -1,0 +1,25 @@
+@use '../../../timings';
+
+
+.fadeTop {
+    opacity: 0; 
+    transform: translate(0, 10vh);
+    transition: all timings.$fade-timing;
+  }
+  
+  .fadeRight {
+    opacity: 0;
+    transform: translate(6vh, 0vh);
+    transition: all timings.$fade-timing;
+  }
+  
+  .fadeLeft {
+    opacity: 0;
+    transform: translate(-10vh, 0vh);
+    transition: all timings.$fade-timing;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }

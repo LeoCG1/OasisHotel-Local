@@ -1,0 +1,45 @@
+@use '../../../sizes';
+@use '../../../fonts';
+
+.covidRow{
+    position: relative;
+    margin-top: sizes.$covid-row-margin;
+}
+.covid{
+    div{
+        img{
+            width: sizes.$covid-img-lados;
+            height: sizes.$covid-img-lados;
+            margin-left: sizes.$covid-img-margin;
+        }
+        h2{
+            margin-top: sizes.$covid-h2-margin;
+            font-size: fonts.$xx-large;
+            text-align: center;
+            margin-bottom: sizes.$covid-h2-margin;
+        }
+        .viajar{
+            margin-top: sizes.$covid-viajar-margin;
+            text-align: center;
+        }
+        a{
+            width: sizes.$cien-porcentaje;
+        }
+
+    }
+}
+.viajarMargen{
+    transform: translateX(sizes.$viajar-transx);
+}
+.viajarMargen{
+    img{
+        transform: translate(sizes.$viajar-trans);
+    }
+}
+
+.covidP{
+    margin-bottom: sizes.$covid-margin-bot;
+}
+.covidTranq{
+    margin-bottom: sizes.$covid-margin-bot;
+}

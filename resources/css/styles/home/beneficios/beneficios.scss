@@ -1,0 +1,58 @@
+@use '../../../colors';
+@use '../../../sizes';
+@use '../../../fonts';
+
+.beneficiosStyle{
+    background-color: colors.$negro-fondo;
+    color: colors.$verde-oasis;
+    padding: sizes.$beneficios-padding;
+    border: sizes.$beneficios-borde solid colors.$verde-oasis;
+    border-radius: sizes.$beneficios-radio;
+}
+.viajar{
+    background-color: colors.$negro-fondo;
+    color: colors.$verde-oasis;
+    padding: sizes.$viajar-padding;
+    border: sizes.$viajar-borde solid colors.$verde-oasis;
+    border-radius: sizes.$viajar-radio;
+    height: sizes.$cien-porcentaje;
+}
+
+.beneficios{
+    div{
+        img{
+            width: sizes.$beneficios-img-lados;
+            height: sizes.$beneficios-img-lados;
+        }
+        h3{
+            font-size:fonts.$medium;
+            text-align: center;
+            position: relative;
+            right: sizes.$beneficios-h3-right; 
+            top: sizes.$beneficios-h3-top;
+        }
+        a{
+            width:sizes.$cien-porcentaje;
+        }
+    }
+}
+
+.beneficiosTitulo{
+    font-size: fonts.$beneficios-titulo;
+}
+
+.beneficiosMargen{
+    margin-top: sizes.$beneficios-margen;
+    transform: translate(sizes.$beneficios-trans-der, sizes.$beneficios-trans-top);
+}
+.cancelar{
+    img{
+        transform: translate(sizes.$cancelar-trans);
+    }
+}
+
+
+.beneficiosRow{
+    position: relative;
+    margin-top: sizes.$beneficios-row-margen;
+}

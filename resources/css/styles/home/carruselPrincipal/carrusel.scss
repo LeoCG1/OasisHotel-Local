@@ -1,0 +1,31 @@
+@use '../../../sizes';
+@use '../../../fonts';
+@use '../../../animations';
+@use '../../../timings';
+#carouselIndexPrincipal{
+    position:relative;
+    bottom: sizes.$carousel-bottom;
+    img{
+        height: sizes.$altura-view;
+    }
+}
+
+.principalInner{
+    div{
+        h5{
+            font-size: fonts.$carrousel-titulos;
+            text-align: center;
+            transform: translate(0px, -300px);
+            animation: movimiento timings.$carrousel-titulos;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+.carousel-item{
+    img{
+        width: sizes.$cien-porcentaje;
+        height: sizes.$carousel-item-alt;
+    }
+}
+

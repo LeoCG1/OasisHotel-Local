@@ -1,0 +1,55 @@
+@use '../../colors';
+@use '../../sizes';
+@use '../../fonts';
+@use '../../timings';
+.footer{
+    background-color:colors.$negro-fondo;;
+    height: sizes.$footer-altura;
+    img{
+        width: sizes.$footer-icon-lados;
+        height: sizes.$footer-icon-lados;
+        margin-left: sizes.$footer-icon-margin;
+    }
+    div{
+        display: flex;
+        flex-wrap: nowrap;
+        color: colors.$verde-oasis;
+        height: sizes.$cien-porcentaje;
+        svg{
+            position: relative;
+            top: sizes.$footer-svg-pos;
+            left: sizes.$footer-svg-pos;
+        }  
+    }
+}
+.direccionHotel{
+    width: sizes.$footer-dir-ancho;
+    margin-left: sizes.$footer-dir-margin;
+    p{
+        font-size: fonts.$footer-size;
+        margin-left: sizes.$footer-p-margin;
+    }  
+}
+
+.avisoLegal, .comoLlegar{
+    color:colors.$verde-oasis; 
+    font-size: fonts.$footer-size;
+}
+
+
+
+.iconosUser{
+    position: relative;
+    width: sizes.$footer-icon-user;
+    justify-content: end;
+    a{
+        color: colors.$blanco;
+    }
+}
+
+.iconoFooter{
+    transition: all timings.$iconos-footer;
+}
+.iconoFooter:hover{
+    opacity: 0.5;
+}

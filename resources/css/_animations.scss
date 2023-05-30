@@ -1,0 +1,36 @@
+@use './sizes';
+
+@keyframes mueveIcono {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(50deg);}
+    50%{transform: rotate(-50deg);}
+    75%{transform: rotate(50deg);}
+    100%{transform: rotate(0deg);}
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translate(0px, -300px);
+      }
+      100% {
+        transform: translate(0px);
+      }
+  }
+
+  @keyframes brillo {
+    0%{filter: brightness(sizes.$cero-porcentaje);}
+    100%{filter: brightness(sizes.$cien-porcentaje);}
+}
+
+@keyframes entraInput {
+    0%{transform: translate(10vh, 0vh);}
+    100%{transform: translate(0vh, 0vh);}
+}
+
+@keyframes campanaMueve {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(6deg);}
+    50%{transform: rotate(-6deg);}
+    75%{transform: rotate(6deg);}
+    100%{transform: rotate(0deg);}
+}

@@ -1,0 +1,55 @@
+@use '../../colors';
+@use '../../sizes';
+@use '../../fonts';
+@use '../../animations';
+@use '../../timings';
+nav{
+    background-color: transparent;
+    color: colors.$verde-oasis;
+    z-index: 99;
+    transition: all timings.$nav-transitions ease-in-out;
+    background-color: colors.$negro-fondo;
+    a{
+        color: colors.$negro;
+    }
+}
+.estiloTexto{
+    color:colors.$verde-oasis;
+    text-shadow: sizes.$nav-shadow sizes.$nav-shadow colors.$negro;
+    transition: all timings.$nav-transitions;
+    &:hover{
+        filter: brightness(sizes.$nav-brillo);
+    }
+}
+
+.sinScroll{
+    animation: brillo timings.$nav-animations;
+    position: absolute;
+    top: sizes.$nav-sinscroll-top;
+    display: flex;
+    flex-direction: column;
+    transition: all timings.$nav-transitions ease-in-out;
+} 
+.sinScrollNav{
+    animation: brillo timings.$nav-animations;
+    z-index: 99;
+    background-color: transparent;
+    transition: all timings.$nav-transitions ease-in-out;
+}
+
+
+.iconoReserva{
+    position: absolute;
+    a{
+        img{
+            width: sizes.$nav-icono-reserva;
+        }
+    }
+}
+
+#linksdesplazar{
+    position: relative;
+    left: sizes.$nav-links-posleft;
+    font-size: fonts.$links-nav;
+    font-family: fonts.$fuente-general;
+}

@@ -1,0 +1,46 @@
+@use '../../../sizes';
+
+
+
+.cartaHabitaciones{
+    margin-bottom: sizes.$carta-hab-margin-bottom;
+}
+.cartaHabitaciones{
+    div{
+        div{
+            img{
+                width: sizes.$cien-porcentaje;
+                height: sizes.$carta-img-alto;
+            }
+            div{
+                div{
+                    img{
+                        width: sizes.$carta-hab-img-lados;
+                        height: sizes.$carta-hab-img-lados;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.encuentraHabitacion{
+    margin-top: sizes.$habitacion-titulo-margin-top;
+    margin-bottom: sizes.$habitacion-titulo-margin-bottom;
+}
+
+.iconosHabitacionCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: sizes.$habitacion-iconos-margin;
+    margin-bottom: sizes.$habitacion-iconos-margin;
+}
+.iconoCentro{
+    margin-left: sizes.$habitacion-iconos-margin;
+    margin-right: sizes.$habitacion-iconos-margin;
+}
+.verMas{
+    width: sizes.$reserva-boton-ancho;
+}

@@ -1,0 +1,14 @@
+@use '../../../colors';
+@use '../../../sizes';
+@use '../../../timings';
+.subrallado{
+    text-decoration: none;
+    background-image: linear-gradient(colors.$verde-oasis, colors.$verde-oasis);
+    background-position: sizes.$cero-porcentaje sizes.$cien-porcentaje;
+    background-repeat: no-repeat;
+    background-size: sizes.$cero-porcentaje sizes.$subrallado-fondo;
+    transition: background-size timings.$subrallado;
+}
+.subrallado:hover, .subrallado:focus {
+    background-size: sizes.$cien-porcentaje sizes.$subrallado-fondo;
+}

@@ -1,0 +1,85 @@
+@use '../../colors';
+@use '../../sizes';
+@use '../../fonts';
+.calendar{
+    display: flex;
+    flex-flow: column;
+    .header{
+        .month-year {
+            font-size: fonts.$staffcalend-mes;
+            font-weight: fonts.$staffcalend-weight;
+            color: colors.$gris-staff-mes;
+            padding: sizes.$calend-mes-padding sizes.$cero;
+        }
+    }
+    .days{
+        display: flex;
+        flex-flow: wrap;
+        .day_name {
+            width: calc(100% / 7);
+            border-right: sizes.$calend-diaNombre-borde solid colors.$staff-calendario-borde;
+            padding: sizes.$calend-diaNombre-padding;
+            text-transform: uppercase;
+            font-size: fonts.$staffcalend-dia;
+            font-weight: fonts.$staffcalend-weight;
+            color: colors.$staff-calendario-dia;
+            color: colors.$staff-calend-dia;
+            background-color: colors.$staff-calen-fondo;
+        }
+        .day_name:nth-child(7) {
+            border: none;
+        }
+        .day_num{
+            display: flex;
+            flex-flow: column;
+            width: calc(100% / 7);
+            border-right: sizes.$calend-diaNum-borde solid colors.$staff-calen-borde-dianum;
+            border-bottom: sizes.$calend-diaNum-borde solid colors.$staff-calen-borde-dianum;
+            padding: sizes.$calend-diaNum-padding;
+            font-weight: fonts.$staffcalend-weight;
+            color: colors.$staff-calen-dianum;
+            cursor: pointer;
+            min-height: sizes.$calend-diaNum-alto;
+            span {
+                display: inline-flex;
+                width: sizes.$calend-diaNum-spanAncho;
+                font-size: fonts.$staffcalend-span;
+            }
+            .event {
+                margin-top: sizes.$calend-event-margen;
+                font-weight: fonts.$staff-calend-eventWeight;
+                font-size: fonts.$staff-calend-event;
+                padding: sizes.$calend-event-padd1 sizes.$calend-event-padd2;
+                border-radius: sizes.$calend-event-radio;
+                background-color: colors.$staff-calend-event;
+                color: colors.$staff-calend-dia;
+                word-wrap: break-word;
+            }
+            .event.green{
+                background-color: colors.$calend-event-verde;
+            }
+            .event.blue{
+                background-color: colors.$calend-event-azul;
+            }
+            .event.red{
+                background-color: colors.$calend-event-rojo;
+            }
+        }
+        .day_num:nth-child(7n+1) {
+            border-left: sizes.$calend-diaNum-borde solid colors.$staff-calen-borde-dianum;
+        }
+        .day_num:hover {
+            background-color: colors.$calend-hover;
+        }
+        .day_num.ignore {
+            background-color: colors.$calend-hover;
+            color: colors.$calend-ignore;
+            cursor: inherit;
+        }
+        .day_num.selected {
+            background-color: colors.$calend-selected;
+            cursor: inherit;
+        }
+    }
+}
+

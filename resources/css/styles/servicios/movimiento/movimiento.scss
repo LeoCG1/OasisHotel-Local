@@ -1,0 +1,12 @@
+
+
+
+.centro:hover{
+    transform: scale(1.6);
+}
+.izquierda:hover{
+    transform: scale(1.6) translate(100px);
+}
+.derecha:hover{
+    transform: scale(1.6) translate(-100px);
+}

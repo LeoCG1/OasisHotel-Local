@@ -1,0 +1,10 @@
+@use '../../../sizes';
+
+
+#carouselSuite{
+    position: relative;
+    bottom: sizes.$carousel-bottom;
+    img{
+        height: sizes.$altura-view;
+    }
+}

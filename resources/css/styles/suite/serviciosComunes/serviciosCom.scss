@@ -1,0 +1,31 @@
+@use '../../../sizes';
+@use '../../../fonts';
+
+.reservaMargenSuite{
+    div{
+        div{
+            margin-top: sizes.$reserva-margen-fam;
+            margin-bottom: sizes.$reserva-margen-fam;
+        }
+    }
+}
+
+.serviciosSuite{
+    div{
+        div{
+            img{
+                width: sizes.$servicios-img-lados;
+                height: sizes.$servicios-img-lados;
+            }
+            h3{
+                font-size: fonts.$medium;
+                text-align: center;
+                margin-right: sizes.$h3-margin-right;
+                margin-top: sizes.$h3-margin-top;
+             }
+             h2{
+                margin-bottom: sizes.$h2-margin-bottom;
+            }
+        }
+    }
+}

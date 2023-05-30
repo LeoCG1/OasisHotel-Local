@@ -1,0 +1,74 @@
+@use '../../../colors';
+@use '../../../sizes';
+@use '../../../fonts';
+@use '../../../timings';
+@mixin tamano(){
+    width: sizes.$otroServicios-tamano;
+    height: sizes.$otroServicios-tamano;
+    margin-left: sizes.$otroServicios-margen;
+}
+
+
+.servicesIcons{
+    div{
+        div{
+            h1{
+                margin-bottom: sizes.$service-icon-margen;
+            }
+            img{
+                width: sizes.$cien-porcentaje;
+                height: sizes.$service-icon-alto;
+                transition: all timings.$restaurante-img;
+                border: sizes.$service-icon-borde solid colors.$verde-oasis;
+            }
+            h2{
+                font-size: fonts.$medium;
+                text-align: center;
+                margin-top: sizes.$service-h2-margen;
+            }
+        }
+    }
+}
+
+
+
+
+.otrosServiceTitulo{
+    margin-top: sizes.$otroservice-margen-top;
+    margin-bottom: sizes.$otroservice-margen-bot;
+    div{
+        img{
+            @include tamano;
+        }
+        h2{
+            text-align: center;
+            margin-top: sizes.$otroservice-h2-margen;
+        }
+        ul{
+            li{
+                line-height: fonts.$servicios-line;
+            }
+        }
+    }
+}
+
+.otrosServiceIcons{
+    div{
+        img{
+            @include tamano;
+        }
+        h2{
+            text-align: center;
+            margin-top: sizes.$otroservice-icons-margen;
+        }
+        ul{
+            li{
+                line-height: fonts.$servicios-line;
+            }
+        }
+    }
+}
+
+.serviceMargin{
+    margin-bottom: sizes.$service-margen-bot;
+}

@@ -1,0 +1,62 @@
+@use '../../colors';
+@use '../../sizes';
+@use '../../fonts';
+@use '../../animations';
+@use '../../timings';
+#adminBarra{
+    background : linear-gradient(to bottom, colors.$azul-admin, colors.$celeste-admin, colors.$azul-admin);
+    height : sizes.$altura-admin-barra;
+    margin : sizes.$cero sizes.$cero sizes.$cero auto;
+    position : fixed;
+    right : sizes.$cero-porcentaje;
+    top : sizes.$admin-pos-top;
+    z-index : sizes.$admin-index;
+    border-radius : sizes.$admin-borde-izq sizes.$cero sizes.$cero sizes.$admin-borde-izq;
+    overflow: hidden;
+    img{
+        width: sizes.$admin-iconos;
+        position: relative;
+        top: sizes.$admin-icon-top;
+        left: sizes.$admin-icon-left;
+      }
+    p{
+        position: relative;
+        top: sizes.$admin-p-top;
+        text-align: center;
+        color: colors.$blanco;
+        font-size:fonts.$large;
+    }
+  }
+
+.adminNormal {
+    width : sizes.$admin-normal;
+    transition : all timings.$admin-normal ease;
+    &:hover{
+        width: sizes.$admin-hover;
+        opacity: 0.7;
+    }
+}
+
+#iconoAdmin, #iconoRes{
+    margin-left: sizes.$admin-icon-margin;
+    margin-right: sizes.$admin-icon-margin;
+}
+.adminAni {
+    transition: all timings.$admin-alargado ease;
+    width: sizes.$admin-crece;
+    border : colors.$blanco-admin solid sizes.$admin-borde;
+    p{
+        display: none;
+    }
+    .iconosAdmin:hover{
+        animation: mueveIcono timings.$admin-iconos;
+    }
+}
+
+#abrirBarra, #cerrarBarra{
+    cursor: pointer;
+}
+#cerrarBarra{
+    transform: scale(0.5);
+    margin-left: sizes.$admin-cerrar;
+}
