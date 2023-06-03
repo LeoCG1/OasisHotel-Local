@@ -11,7 +11,7 @@
     </div>
     <div class="row restauranteRow">
       <div class="col-sm-12 col-md-6 col-lg-3 restauranteStyle">
-        <h2>UN RESTAURANTE CON HISTÓRIA</h2>
+        <h2>UN RESTAURANTE CON HISTORIA</h2>
         <p>Los mejores platos Valencianos se pueden encontrar aquí mismo.</p>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-3">

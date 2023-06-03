@@ -1,9 +1,9 @@
 <footer class="sticky-bottom footer">
         <div>
-          <a href="#"><img src="/iconos/facebook.png" class="iconoFooter img-fluid" alt="link con icono de facebook"></a>
-          <a href="#"><img src="/iconos/twitter.png" class="iconoFooter img-fluid" alt="link con icono de twitter"></a>
-          <a href="#"><img src="/iconos/youtube.png" class="iconoFooter img-fluid" alt="link con icono de youtube"></a>
-          <a href="#"><img src="/iconos/tripadvisor.png" class="iconoFooter img-fluid" alt="link con icono de tipadvisor"></a>
+          <a href="#" class="iconoLink"><img src="/iconos/facebook.png" class="iconoFooter img-fluid" alt="link con icono de facebook"></a>
+          <a href="#" class="iconoLink"><img src="/iconos/twitter.png" class="iconoFooter img-fluid" alt="link con icono de twitter"></a>
+          <a href="#" class="iconoLink"><img src="/iconos/youtube.png" class="iconoFooter img-fluid" alt="link con icono de youtube"></a>
+          <a href="#" class="iconoLink"><img src="/iconos/tripadvisor.png" class="iconoFooter img-fluid" alt="link con icono de tipadvisor"></a>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-fill"
             viewBox="0 0 16 16">
             <path
@@ -11,7 +11,7 @@
           </svg>
           <div class="direccionHotel">
           <p class="text-wrap">Hotel Oasis | Av/ Inventada, 1000 | 46013 Valencia (Spain) | </p>
-          <p><a class="comoLlegar subrallado" href="https://www.google.es/maps/dir//39.4526265,-0.3529735/@39.4522103,-0.3539431,17.75z/data=!4m2!4m1!3e0">Cómo
+          <p><a class="comoLlegar subrallado" href="https://www.google.es/maps/dir//39.4526265,-0.3529735/@39.4522103,-0.3539431,17.75z/data=!4m2!4m1!3e0" target=”_blank”>Cómo
               llegar </a></p>
             <p><a class="avisoLegal subrallado" href="#"> Aviso Legal</a></p>
         </div>

@@ -17,6 +17,7 @@ nav{
     color:colors.$verde-oasis;
     text-shadow: sizes.$nav-shadow sizes.$nav-shadow colors.$negro;
     transition: all timings.$nav-transitions;
+    font-weight:bolder;
     &:hover{
         filter: brightness(sizes.$nav-brillo);
     }
@@ -36,7 +37,6 @@ nav{
     background-color: transparent;
     transition: all timings.$nav-transitions ease-in-out;
 }
-
 
 .iconoReserva{
     position: absolute;

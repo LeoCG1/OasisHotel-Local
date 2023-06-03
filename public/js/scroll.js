@@ -30,7 +30,9 @@ function midWay(){
     botonArriba.style.display = "none";
     navSinScroll.classList.add('sinScrollNav');
     sinScrollPic.classList.add('sinScroll');
-    ancho();
+    if(window.innerWidth < 992){
+      ancho();
+      }
   }else{
     botonArriba.style.display = "block";
     navSinScroll.classList.remove('sinScrollNav');
@@ -53,6 +55,10 @@ function scrollFunction() {
     botonArriba.style.display = "none";
     navSinScroll.classList.add('sinScrollNav');
     sinScrollPic.classList.add('sinScroll');
+  }
+  if (window.innerWidth < 992) {
+    navSinScroll.classList.remove('sinScrollNav');
+    sinScrollPic.classList.remove('sinScroll');
   }
 }
 /**Leonardo Costa

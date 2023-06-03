@@ -40,13 +40,17 @@
 
 .iconosUser{
     position: relative;
+    margin-right: 3px;
     width: sizes.$footer-icon-user;
     justify-content: end;
     a{
         color: colors.$blanco;
     }
 }
-
+.iconoLink{
+    margin-left: 3px;
+    margin-right: 3px;
+}
 .iconoFooter{
     transition: all timings.$iconos-footer;
 }

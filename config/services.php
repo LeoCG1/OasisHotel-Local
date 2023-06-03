@@ -33,7 +33,7 @@ return [
     'google' => [
         'client_id' => env('GOOGLE_ID'),
         'client_secret' => env('GOOGLE_KEY'),
-        'redirect' => 'https://oasishotel-production.up.railway.app/google-callback',
+        'redirect' => 'http://localhost:8000/google-callback',
     ],
 
 ];

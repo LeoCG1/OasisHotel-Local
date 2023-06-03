@@ -249,12 +249,11 @@
           La estación de tren Ave, se encuentra a poco más de 5km (15' en coche).</br>
           Y si vienes en coche, tenemos servicio de aparcamiento privado.</br>
         </p>
-        <a class="btn btn-warning" id="botonReserva" href="https://www.google.es/maps/dir//39.4526265,-0.3529735/@39.4522103,-0.3539431,17.75z/data=!4m2!4m1!3e0">Cómo llegar</a>
-
+        <a class="btn btn-warning" id="botonReserva" href="https://www.google.es/maps/dir//39.4521777,-0.3539732/@39.4519705,-0.3550466,17.08z/data=!4m2!4m1!3e3?entry=ttu" target="_blank">Cómo llegar</a>
        </div>
       </div>
       <div class="col-sm-12 col-md-9 mapaHotel">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d998.8065415155087!2d-0.3532440352456851!3d39.45259783700686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1679064202710!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed/v1/place?q=39.45273528126275,+-0.3527855491436823&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
