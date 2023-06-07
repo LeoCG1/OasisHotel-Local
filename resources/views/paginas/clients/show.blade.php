@@ -92,10 +92,9 @@
           <table class="table table-hover table-striped">
             <thead>
               <tr>
-                <th>DNI</th>
                 <th>Concepto</th>
                 <th>Dirección</th>
-                <th>Nº Tarjeta</th>
+                <th>Nº vuTarjeta</th>
                 <th>Total</th>
               </tr>
             </thead>
